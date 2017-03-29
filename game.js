@@ -16,10 +16,7 @@ KEY_CODES = {
   80: 'p'
 }
 
-KEY_STATUS = { keyDown:false };
-for (code in KEY_CODES) {
-  KEY_STATUS[KEY_CODES[code]] = false;
-}
+
 
 $(window).keydown(function (e) {
   KEY_STATUS.keyDown = true;
