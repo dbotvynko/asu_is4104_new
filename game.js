@@ -16,10 +16,7 @@ KEY_CODES = {
   80: 'p'
 }
 
-KEY_STATUS = { keyDown:false };
-for (code in KEY_CODES) {
-  KEY_STATUS[KEY_CODES[code]] = false;
-}
+
 
 $(window).keydown(function (e) {
   KEY_STATUS.keyDown = true;
@@ -86,8 +83,8 @@ Sprite = function () {
     };
 
     this.acc = {
-      x:   0,
-      y:   0,
+      x:   1,
+      y:   2,
       rot: 0
     };
   };
